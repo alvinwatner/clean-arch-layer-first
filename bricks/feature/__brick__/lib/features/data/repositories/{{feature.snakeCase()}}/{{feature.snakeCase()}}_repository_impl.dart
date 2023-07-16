@@ -1,3 +1,5 @@
+import 'package:dio/dio.dart';
+import 'package:jobseekerapp/core/error/failure.dart';
 import 'package:jobseekerapp/core/service/network_info.dart';
 import '../../../domain/repositories/{{feature.snakeCase()}}/{{feature.snakeCase()}}_repository.dart';
 import '../../../../core/util/util.dart';
