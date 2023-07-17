@@ -23,7 +23,7 @@ void main() {
     'make sure usecase sucessful receive response from endpoint',
     () async {
       // arrange
-      const tResponse = {{usecase.pascalCase()}}Response();
+      const tResponse = {{model.pascalCase()}}Response();
       when(mock{{feature.pascalCase()}}Repository.{{usecase.camelCase()}}(any)).thenAnswer(
         (_) async => const Right(tResponse),
       );
