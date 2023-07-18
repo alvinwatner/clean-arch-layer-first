@@ -26,8 +26,26 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
-  name:
+  bloc:
     type: string
-    description: Your name
-    default: Dash
-    prompt: What is your name?
+    description: Your bloc
+    default: Cool Bloc
+    prompt: What is the bloc name?
+
+  usecase:
+    type: string
+    description: Your usecase
+    default: Cool Usecase
+    prompt: What is the usecase name?
+
+  model:
+    type: string
+    description: Your model
+    default: Cool Model
+    prompt: What is the model name?
+
+  feature:
+    type: string
+    description: Your feature
+    default: Cool Feature
+    prompt: What is the feature name?
