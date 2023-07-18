@@ -10,12 +10,12 @@ abstract class {{bloc.pascalCase()}}State extends Equatable {
 
 class {{bloc.pascalCase()}}InitialState extends {{bloc.pascalCase()}}State {}
 
-class {{bloc.pascalCase()}}State extends {{bloc.pascalCase()}}State {}
+class {{bloc.pascalCase()}}LoadingState extends {{bloc.pascalCase()}}State {}
 
 class {{bloc.pascalCase()}}SuccessState extends {{bloc.pascalCase()}}State {
-  final {{model.pascalCase()}}Reponse {{model.camelCase()}}Reponse;
+  final {{model.pascalCase()}}Response {{model.camelCase()}}Reponse;
   const {{bloc.pascalCase()}}SuccessState({
-    required this.{{model.pascalCase()}}Reponse,
+    required this.{{model.camelCase()}}Reponse,
   });
 
   @override

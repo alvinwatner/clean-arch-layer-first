@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:jobseekerapp/features/data/models/{{feature}}/{{model.snakeCase()}}_response.dart';
-import 'package:jobseekerapp/features/domain/usecases/{{usecase}}/{{usecase.snakeCase()}}.dart';
+import 'package:jobseekerapp/features/data/models/{{feature.snakeCase()}}/{{model.snakeCase()}}_response.dart';
+import 'package:jobseekerapp/features/domain/usecases/{{usecase.snakeCase()}}/{{usecase.snakeCase()}}.dart';
 
 import '../../../../core/error/failure.dart';
 
