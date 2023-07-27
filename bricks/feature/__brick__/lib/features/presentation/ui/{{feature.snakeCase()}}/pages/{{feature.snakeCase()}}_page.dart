@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../../injection_container.dart';
 
 class {{feature.pascalCase()}}Page extends StatefulWidget {
   static const routeName = '{{feature.paramCase()}}-page';
