@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:{{#isJobseekerApp}}jobseekerapp{{/isJobseekerApp}}{{#isJobseekerPartner}}jobseekerpartner{{/isJobseekerPartner}}/features/data/models/{{feature.snakeCase()}}/{{model.snakeCase()}}_response.dart';
 import 'package:jobseekerapp/features/data/models/{{feature.snakeCase()}}/{{model.snakeCase()}}_response.dart';
 import 'package:jobseekerapp/features/domain/usecases/{{usecase.snakeCase()}}/{{usecase.snakeCase()}}.dart';
 import 'package:mockito/mockito.dart';

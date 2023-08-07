@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:jobseekerapp/config/flavor_config.dart';
+import 'package:jobseekerapp/config/base_url_config.dart';
 
 
 abstract class {{feature.pascalCase()}}RemoteDataSource {
