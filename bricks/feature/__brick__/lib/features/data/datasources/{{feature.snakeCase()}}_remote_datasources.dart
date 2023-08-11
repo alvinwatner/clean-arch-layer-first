@@ -9,9 +9,9 @@ abstract class {{feature.pascalCase()}}RemoteDataSource {
 
 class {{feature.pascalCase()}}RemoteDataSourceImpl extends {{feature.pascalCase()}}RemoteDataSource {
   final Dio dio;
-  {{feature.pascalCase()}}RemoteDataSourceImpl(
-    this.dio,
-  );
+  {{feature.pascalCase()}}RemoteDataSourceImpl({
+    required this.dio,
+  });
 
   final baseUrl = FlavorConfig.instance!.values!.baseUrlEndpoint;
   
