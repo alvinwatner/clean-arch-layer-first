@@ -13,17 +13,17 @@ class {{bloc.pascalCase()}}InitialState extends {{bloc.pascalCase()}}State {}
 class {{bloc.pascalCase()}}LoadingState extends {{bloc.pascalCase()}}State {}
 
 class {{bloc.pascalCase()}}SuccessState extends {{bloc.pascalCase()}}State {
-  final {{model.pascalCase()}}Response {{model.camelCase()}}Reponse;
+  final {{model.pascalCase()}}Response {{model.camelCase()}}Response;
   const {{bloc.pascalCase()}}SuccessState({
-    required this.{{model.camelCase()}}Reponse,
+    required this.{{model.camelCase()}}Response,
   });
 
   @override
-  List<Object> get props => [{{model.camelCase()}}Reponse];
+  List<Object> get props => [{{model.camelCase()}}Response];
 
   @override
   String toString() {
-    return '{{bloc.pascalCase()}}SuccessState{{{model.camelCase()}}Reponse: ${{model.camelCase()}}Reponse}';
+    return '{{bloc.pascalCase()}}SuccessState{{{model.camelCase()}}Response: ${{model.camelCase()}}Response}';
   }  
 }
 
