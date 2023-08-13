@@ -10,11 +10,11 @@ abstract class {{bloc.pascalCase()}}State extends Equatable {
 
 class {{bloc.pascalCase()}}InitialState extends {{bloc.pascalCase()}}State {}
 
-class {{bloc.pascalCase()}}LoadingState extends {{bloc.pascalCase()}}State {}
+class {{bloc.pascalCase()}}LoadInProgress extends {{bloc.pascalCase()}}State {}
 
-class {{bloc.pascalCase()}}SuccessState extends {{bloc.pascalCase()}}State {
+class {{bloc.pascalCase()}}LoadSuccess extends {{bloc.pascalCase()}}State {
   final {{model.pascalCase()}}Response {{model.camelCase()}}Response;
-  const {{bloc.pascalCase()}}SuccessState({
+  const {{bloc.pascalCase()}}LoadSuccess({
     required this.{{model.camelCase()}}Response,
   });
 
@@ -23,13 +23,13 @@ class {{bloc.pascalCase()}}SuccessState extends {{bloc.pascalCase()}}State {
 
   @override
   String toString() {
-    return '{{bloc.pascalCase()}}SuccessState{{{model.camelCase()}}Response: ${{model.camelCase()}}Response}';
+    return '{{bloc.pascalCase()}}LoadSuccess{{{model.camelCase()}}Response: ${{model.camelCase()}}Response}';
   }  
 }
 
-class {{bloc.pascalCase()}}FailureState extends {{bloc.pascalCase()}}State {
+class {{bloc.pascalCase()}}LoadFailure extends {{bloc.pascalCase()}}State {
   final String errorMessage;
-  const {{bloc.pascalCase()}}FailureState({
+  const {{bloc.pascalCase()}}LoadFailure({
     required this.errorMessage,
   });
 
@@ -38,6 +38,6 @@ class {{bloc.pascalCase()}}FailureState extends {{bloc.pascalCase()}}State {
 
   @override
   String toString() {
-    return '{{bloc.pascalCase()}}FailureState{errorMessage: $errorMessage}';
+    return '{{bloc.pascalCase()}}LoadFailure{errorMessage: $errorMessage}';
   }
 }
