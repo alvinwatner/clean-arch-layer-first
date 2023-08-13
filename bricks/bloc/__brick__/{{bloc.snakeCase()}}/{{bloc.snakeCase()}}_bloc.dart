@@ -38,7 +38,7 @@ class {{bloc.pascalCase()}}Bloc extends Bloc<{{bloc.pascalCase()}}Event, {{bloc.
           );
         },
         (response) => {{bloc.pascalCase()}}SuccessState(
-          {{model.camelCase()}}Reponse: response,
+          {{model.camelCase()}}Response: response,
         ),
       ),
     );
