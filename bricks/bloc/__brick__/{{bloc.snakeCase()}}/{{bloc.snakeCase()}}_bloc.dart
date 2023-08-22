@@ -19,7 +19,7 @@ class {{bloc.pascalCase()}}Bloc extends Bloc<{{bloc.pascalCase()}}Event, {{bloc.
     {{bloc.pascalCase()}}GotInitialData event,
     Emitter<{{bloc.pascalCase()}}State> emit,
   ) async {
-    emit({{bloc.pascalCase()}}LoadingState());
+    emit({{bloc.pascalCase()}}LoadInProgress());
     final result = await {{usecase.camelCase()}}(const Params{{usecase.pascalCase()}}());
 
     emit(
@@ -33,11 +33,11 @@ class {{bloc.pascalCase()}}Bloc extends Bloc<{{bloc.pascalCase()}}Event, {{bloc.
           } else if (failure is ParsingFailure) {
             errorMessage = failure.errorMessage;
           }
-          return {{bloc.pascalCase()}}FailureState(
+          return {{bloc.pascalCase()}}LoadFailure(
             errorMessage: errorMessage,
           );
         },
-        (response) => {{bloc.pascalCase()}}SuccessState(
+        (response) => {{bloc.pascalCase()}}LoadSuccess(
           {{model.camelCase()}}Response: response,
         ),
       ),

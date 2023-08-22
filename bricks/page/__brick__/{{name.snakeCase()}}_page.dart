@@ -34,7 +34,6 @@ class _{{name.pascalCase()}}PageState extends State<{{name.pascalCase()}}Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const JsBottomNavigationBar(),
       body: Center(
         child: Text(
           "{{name.sentenceCase()}} Page",
