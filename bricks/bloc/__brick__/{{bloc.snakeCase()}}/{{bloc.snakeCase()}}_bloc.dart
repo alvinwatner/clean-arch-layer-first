@@ -12,11 +12,11 @@ class {{bloc.pascalCase()}}Bloc extends Bloc<{{bloc.pascalCase()}}Event, {{bloc.
   final {{usecase.pascalCase()}} {{usecase.camelCase()}};
    {{bloc.pascalCase()}}Bloc({required this.{{usecase.camelCase()}}})
       : super({{bloc.pascalCase()}}InitialState()) {
-    on<{{bloc.pascalCase()}}GotInitialData>(_onGotInitialData);
+    on<{{bloc.pascalCase()}}GetInitialDataTriggered>(_onGetInitialDataTriggered);
   }
 
-  void _onGotInitialData(
-    {{bloc.pascalCase()}}GotInitialData event,
+  void _onGetInitialDataTriggered(
+    {{bloc.pascalCase()}}GetInitialDataTriggered event,
     Emitter<{{bloc.pascalCase()}}State> emit,
   ) async {
     emit({{bloc.pascalCase()}}LoadInProgress());

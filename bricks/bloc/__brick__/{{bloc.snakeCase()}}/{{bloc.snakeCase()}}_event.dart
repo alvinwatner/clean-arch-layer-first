@@ -7,4 +7,4 @@ abstract class {{bloc.pascalCase()}}Event extends Equatable {
   List<Object> get props => [];
 }
 
-class {{bloc.pascalCase()}}GotInitialData extends {{bloc.pascalCase()}}Event {}
+class {{bloc.pascalCase()}}GetInitialDataTriggered extends {{bloc.pascalCase()}}Event {}
