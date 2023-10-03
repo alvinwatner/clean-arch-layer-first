@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jobseekerapp/core/common_widgets/js_bottom_navigation_bar.dart';
 import 'package:jobseekerapp/core/theme_manager/text_style_manager.dart';
 
 class {{name.pascalCase()}}Page extends StatefulWidget {
